@@ -1,0 +1,386 @@
+/*font-family: 'Oleo Script Swash Caps', cursive;
+font-family: 'Oswald', sans-serif;
+font-family: 'Yanone Kaffeesatz', sans-serif;*/
+
+body {
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+    background-color: rgb(230, 242, 248);
+}
+
+#header-container {
+    width: 100%;
+}
+
+header {
+    margin-top: -1rem;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: content-box;
+}
+
+#name {
+    display: flex;
+    align-items: center;
+}
+
+header div img {
+    width: 12.5rem;
+    margin-left: 0.5rem;
+}
+
+header div h1 {
+    font-family: 'Oleo Script Swash Caps', cursive;
+    color: rgb(255, 123, 0);
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-left: -3.2rem;
+}
+
+#menu {
+    display: none;
+    margin-top: 1rem;
+    margin-right: 5rem;
+    color: rgb(255, 123, 0);
+    width: 3rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+header div a {
+    display: block;
+}
+
+nav {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    width: 100%;
+    background-color: #05288f;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.25rem;
+    padding: 0.6rem 1.25rem;
+    border-radius: 20px;
+    transition: background-color 0.3s linear;
+}
+
+nav ul li a:hover {
+    background-color: rgb(254, 148, 49);
+}
+
+nav ul li a:active {
+    background-color: whitesmoke;
+    color: rgb(255, 123, 0);
+}
+
+nav ul li a:focus {
+    background-color: whitesmoke;
+    color: rgb(255, 123, 0);
+    box-shadow: 3px 3px 8px rgba(69, 68, 68, 0.5);
+}
+
+.nav-link {
+    margin-right: 2rem;
+}
+
+#last {
+    margin-top: 5.5rem;
+    margin-right: 5rem;
+}
+
+input{
+    padding: 0.3rem 0 0.3rem 2.5rem;
+    font-size: 1rem;
+    background: url(/icons/icons8-search.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+footer {
+    background-color: #05288f;
+    margin: 0;
+}
+
+#footer {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: -1.875rem;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 3.125rem;
+}
+
+footer ul li {
+    margin-top: 4.375rem;
+    margin-right: 1.25rem;
+}
+
+footer ul li svg {
+    width: 2rem;
+}
+
+footer ul li svg:hover {
+    width: 2.2rem;
+}
+
+#footer-logo {
+    width: 12.5rem;
+    margin-left: 0.5rem;
+}
+
+footer div h1 {
+    font-family: 'Oleo Script Swash Caps', cursive;
+    color: rgb(255, 123, 0);
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-left: -3.2rem;
+}
+
+cite {
+    display: block;
+    text-align: center;
+    padding-bottom: 1.875rem;
+}
+
+cite p {
+    font-size: 0.8rem;
+    color: whitesmoke;
+}
+
+
+@media (max-width:1400px) {
+    input{
+        padding: 0.2rem 0 0.2rem 2.5rem;
+    }
+
+    header div img {
+        margin-left: 3.125rem;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    #footer-logo {
+        margin-left: 3.125rem;
+    }
+}
+
+@media (max-width:1024px) {
+    nav {
+        display: none;
+    }
+
+    header{
+        margin-top: 1rem;
+    }
+
+    #menu{
+        display: block;
+    }
+
+    #last{
+        display: none;
+    }
+}
+
+@media (max-width:780px) {
+    #last {
+        display: none;
+    }
+
+    #name {
+        margin-left: 3rem;
+        width: 1rem;
+        display: block;
+    }
+
+    #name img {
+        width: 10rem;
+        padding: 0;
+        margin: 0;
+    }
+
+    #name h1 {
+        font-size: 1.6rem;
+        padding: 0;
+        margin: -1.5rem 0 0 0;
+    }
+
+    #footer #name {
+        margin: 0 auto;
+    }
+
+    #footer #name img{
+        width: 5rem;
+    }
+
+    #footer #name a {
+        margin-left: -1.3rem;
+    }
+
+    #footer #name a h1 {
+        margin-left: -2.4rem;
+    }
+
+    #menu {
+        margin-top: 1rem;
+        width: 2.3rem;
+    }
+
+    #footer {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
+    #footer #name {
+        display: inline-block;
+    }
+
+    footer ul {
+        width: 100%;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        padding-inline-start: 1rem;
+    }
+
+    footer ul li {
+        margin-top: 2rem;
+        margin-right: 2rem;
+    }
+
+    footer ul li svg {
+        width: 1.5rem;
+    }
+
+    footer ul li svg:hover {
+        width: 2rem;
+    }
+
+    #footer-logo {
+        margin-left: 0;
+    }
+
+    cite p {
+        font-size: 0.6rem;
+    }
+}
+
+@media (max-width:480px) {
+    #name {
+        margin-left: 3rem;
+        width: 1rem;
+        display: block;
+    }
+
+    #name img {
+        width: 4.5rem;
+        padding: 0;
+        margin: 0;
+    }
+
+    #name h1 {
+        font-size: 1.5rem;
+        padding: 0;
+        margin: -1.5rem 0 0 0;
+    }
+
+    #footer #name {
+        margin: 0 auto;
+    }
+
+    #footer #name a {
+        margin-left: -1.3rem;
+    }
+
+    #footer #name a h1 {
+        margin-left: -2.4rem;
+    }
+
+    #menu {
+        margin-top: 1rem;
+        width: 2rem;
+    }
+
+    #footer {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
+    #footer #name {
+        display: inline-block;
+    }
+
+    footer ul {
+        width: 100%;
+        list-style: none;
+        display: flex;
+        justify-content: space-evenly;
+        margin-right: 0;
+        padding-inline-start: 0rem;
+    }
+
+    footer ul li {
+        margin-top: 2rem;
+        margin-right: 0;
+    }
+
+    footer ul li svg {
+        width: 1.5rem;
+    }
+
+    footer ul li svg:hover {
+        width: 2rem;
+    }
+
+    #footer-logo {
+        margin-left: 0;
+    }
+
+    cite p {
+        font-size: 0.5rem;
+    }
+}
+
+@media (max-width:370px) {
+    #name img {
+        width: 5rem;
+        padding: 0;
+        margin: 0;
+    }
+
+    #footer #name img {
+        width: 4.5rem;
+        padding: 0;
+        margin: 0;
+    }
+
+    #name {
+        margin-left: 1rem;
+    }
+
+    #menu {
+        margin-top: 0rem;
+        width: 1.7rem;
+        margin-right: 2rem;
+    }
+}
