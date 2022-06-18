@@ -1,0 +1,22 @@
+{
+  "name": "same-travel-page",
+  "version": "1.0.0",
+  "description": "Travel page bootstrap",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ihemebiriegondu/same-travel-page.git"
+  },
+  "author": "Egondu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ihemebiriegondu/same-travel-page/issues"
+  },
+  "homepage": "https://github.com/ihemebiriegondu/same-travel-page#readme",
+  "dependencies": {
+    "bootstrap": "^5.1.3"
+  }
+}
