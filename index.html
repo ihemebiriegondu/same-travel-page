@@ -12,67 +12,84 @@
         href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps:wght@400;700&family=Oswald:wght@200;400;600;700&family=Yanone+Kaffeesatz:wght@300;400;700&display=swap"
         rel="stylesheet">
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+
     <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/main.min.css">
-    <link rel="stylesheet" href="./base.css">
-    <link rel="stylesheet" href="./index.css">
+    <!--<link rel="stylesheet" href="./base.css">
+    <link rel="stylesheet" href="./index.css">-->
 </head>
 
 <body>
-    <div id="header-container">
-        <nav>
-            <ul>
-                <li><a class="nav-link" href="/index.html">Home</a></li>
-                <li><a class="nav-link" href="/destinations page/destinations.html">Destinations</a></li>
-                <li><a class="nav-link" href="/news page/news.html">News</a></li>
-                <li><a class="nav-link" href="/contacts page/contact.html">Contacts</a></li>
-                <li><a class="nav-link" href="/about page/about.html">Our Services</a></li>
-            </ul>
-        </nav>
-        <header>
-            <div id="name">
-                <a href="/index.html"><img src="./images/logo.png" alt="holidayz logo"></a>
-                <a href="/index.html">
-                    <h1>Holidayz</h1>
-                </a>
-            </div>
-            <div id="last">
-                <form id="search" action="">
-                    <input type="text" size="20" placeholder="Search">
+    <div class="row justify-content-center" id="header-container"></div>
+    <nav class="navbar navbar-expand-lg bg-primary fixed-top">
+        <div class="container-fluid px-lg-5">
+            <a class="navbar-brand" href="./index.html">
+                <img src="./images/logo.png" alt="" width="100" height="70" class="d-inline-block align-text-top">
+                <div class="text-secondary">Holidayz</div>
+            </a>
+            <button class="navbar-toggler bg-secondary" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link text-white active" aria-current="page" href="/index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="/destinations page/destinations.html">Destinations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="/news page/news.html">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="/contacts page/contact.html">Contacts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="/about page/about.html">Our Services</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-secondary" type="submit"><i class="bi bi-search"></i></button>
                 </form>
             </div>
-            <svg id="menu" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
-        </header>
+        </div>
+    </nav>
     </div>
     <main>
 
-        <section id="first-section">
-            <div id="first-section-div">
+        <section id="first-section" style="background-image: url('./images/header-image.jpg'); background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat; height: 59rem;">
+            <div id="first-section-div" style="padding: 25rem 56rem 0 5rem;">
                 <div id="round-image-container">
-                    <img class="round-image" id="first-rounded" src="./images/eiffle tower.jpg" alt="Eiffle tower">
-                    <img class="round-image" id="second-rounded" src="./images/hotel.jpg" alt="hotel image">
-                    <img class="round-image" id="third-rounded" src="./images/food.jpg" alt="food image">
+                    <img class="rounded-circle image-fluid d-none" id="first-rounded" src="./images/eiffle tower.jpg" alt="Eiffle tower" width="256"
+                    height="256">
+                    <img class="rounded-circle image-fluid d-none" id="second-rounded" src="./images/hotel.jpg" alt="hotel image" width="256"
+                    height="256">
+                    <img class="rounded-circle image-fluid d-none" id="third-rounded" src="./images/food.jpg" alt="food image" width="256"
+                    height="256">
                 </div>
-                <div id="black-bg">
-                    <h2 id="sub-head">enjoy the beauty of the world</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam numquam fugiat eaque repellat
+                <div class="bg-dark bg-opacity-25 shadow-sm rounded p-5" id="black-bg">
+                    <h2 class="text-capitalize m-0 fw-semibold display-5 text-start" id="sub-head" style="color: rgb(14, 14, 14);">enjoy the beauty of the world</h2>
+                    <p class="text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam numquam fugiat eaque repellat
                         explicabo assumenda tempora nemo omnis pariatur cupiditate.
                     </p>
-                    <a id="discover" href="/destinations page/destinations.html">Discover</a>
+                    <a class="text-white py-4 px-5 rounded-pill mt-5 d-inline-block bg-secondary h5 text-decoration-none" id="discover" href="/destinations page/destinations.html">Discover</a>
                 </div>
             </div>
         </section>
 
         <section class="container">
-            <h2>top <span class="little-line">des</span>tinations</h2>
-            <article>
+            <h2 class="text-capitalize fw-bold text-center">top <span class="little-line">des</span>tinations</h2>
+            <article class="mt-4 pb-5">
                 <ul id="top-destinations">
                     <li>
                         <div>
-                            <img class="top-destinations-images" src="./images/paris.jpg" alt="paris">
+                            <img class="top-destinations-images" src="./images/paris.jpg" alt="paris" width="100%" height="50%">
                             <div class="destinations-cards">
                                 <h4>PARIS <span class="country">FRANCE</span></h4>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, amet...</p>
@@ -84,7 +101,7 @@
                     </li>
                     <li>
                         <div>
-                            <img class="top-destinations-images" src="./images/new-yorkkk.jpg" alt="new york">
+                            <img class="top-destinations-images" src="./images/new-yorkkk.jpg" alt="new york" width="100%" height="50%">
                             <div class="destinations-cards">
                                 <h4>NEW YORK <span class="country">USA</span></h4>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, amet...</p>
@@ -97,7 +114,7 @@
                     <li>
                         <div>
                             <img class="top-destinations-images" src="./images/Machu_Picchu,_Peru.jpg"
-                                alt="Machu Picchu">
+                                alt="Machu Picchu" width="100%" height="50%">
                             <div class="destinations-cards">
                                 <h4>MACHU PICCHU <span class="country">PERU</span></h4>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, amet...</p>
@@ -109,7 +126,7 @@
                     </li>
                     <li>
                         <div>
-                            <img class="top-destinations-images" src="./images/bali.jpg" alt="bali">
+                            <img class="top-destinations-images" src="./images/bali.jpg" alt="bali" width="100%" height="50%">
                             <div class="destinations-cards">
                                 <h4>BALI <span class="country">INDONESIA</span></h4>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, amet...</p>
